@@ -1,4 +1,12 @@
+--[[
+A distribution of https://wearedevs.net/scripts
+Created August 17, 2021, Last updated August 17, 2021
 
+Description: Draws boxes around each player.
+
+Credits to "Real Panda" for their ESP library
+
+Instruction: Edit the settings as desired below and execute the script.
 
 Settings: 
 Replace "nil" with "true" to enable the setting, or "false" to disable the setting. Without the quotes. 
@@ -7,7 +15,7 @@ If you do not change "nil", the defaults will take place.
 _G.WRDESPEnabled = nil --Enables the ESP (Defaults to true)
 _G.WRDESPBoxes = false --Draws boxes around other players (Defaults to true)
 _G.WRDESPTeamColors = nil --Distinguish different teams by their team color. If the game sets one. (Defaults to true)
-_G.WRDESPTracers = false --Displays lines leading to other players (Defaults to false)
+_G.WRDESPTracers = nil --Displays lines leading to other players (Defaults to false)
 _G.WRDESPNames = nil --Displays the names of the players within the ESP box (Defaults to true)
 
 --Dont edit below
@@ -402,7 +410,7 @@ if not _G.WRDESPLoaded then
 
     --Sets defaults where required
     if _G.WRDESPEnabled == nil then _G.WRDESPEnabled = true end
-    if _G.WRDESPes == nil then _G.WRDESPBoxes = false end
+    if _G.WRDESPBoxes == nil then _G.WRDESPBoxes = true end
     if _G.WRDESPTeamColors == nil then _G.WRDESPTeamColors = true end
     if _G.WRDESPTracers == nil then _G.WRDESPTracers = false end
     if _G.WRDESPNames == nil then _G.WRDESPNames = true end
