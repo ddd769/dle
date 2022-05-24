@@ -44,22 +44,22 @@ speed=67
 end
 if keys.w then
 new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
-speed=speed+65
+speed=speed+60
 end
 if keys.s then
 new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
-speed=speed+65
+speed=speed+60
 end
 if keys.d then
 new = new * CFrame.new(speed,0,0)
-speed=speed+61
+speed=speed+65
 end
 if keys.a then
 new = new * CFrame.new(-speed,0,0)
-speed=speed+61
+speed=speed+65
 end
-if speed>61 then
-speed=61
+if speed>65 then
+speed=60
 end
 pos.position=new.p
 if keys.w then
