@@ -40,26 +40,26 @@ wait()
 localplayer.Character.Humanoid.PlatformStand=true
 local new=gyro.cframe - gyro.cframe.p + pos.position
 if not keys.w and not keys.s and not keys.a and not keys.d then
-speed=47
+speed=41
 end
 if keys.w then
 new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
-speed=speed+48
+speed=speed+41
 end
 if keys.s then
 new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
-speed=speed+48
+speed=speed+41
 end
 if keys.d then
 new = new * CFrame.new(speed,0,0)
-speed=speed+50
+speed=speed+41
 end
 if keys.a then
 new = new * CFrame.new(-speed,0,0)
-speed=speed+50
+speed=speed+41
 end
-if speed>50 then
-speed=48
+if speed>41 then
+speed=41
 end
 pos.position=new.p
 if keys.w then
