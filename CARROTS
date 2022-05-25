@@ -22,7 +22,7 @@ function ESP()
                 TextLabel.ZIndex = 10
                 TextLabel.Font = "ArialBold"
                 TextLabel.FontSize = "Size18"
-                TextLabel.TextColor = BrickColor.new("Bright red")
+                TextLabel.TextColor = BrickColor.new("White")
                 TextLabel.TextStrokeTransparency = 0.75
                 while wait() do
                     TextLabel.Text = "Name: "..v.Name.." | Health: "..math.floor(v.Character.Humanoid.Health).." | Distance: "..math.floor((game:GetService("Players").LocalPlayer.Character.Head.Position - v.Character.Head.Position).Magnitude)
