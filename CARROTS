@@ -21,7 +21,7 @@ function ESP()
                 TextLabel.Visible = true
                 TextLabel.ZIndex = 10
                 TextLabel.Font = "GothamBold"
-                TextLabel.FontSize = "Size18"
+                TextLabel.FontSize = "Size14"
                 TextLabel.TextColor = BrickColor.new("White")
                 TextLabel.TextStrokeTransparency = 0.75
                 while wait() do
